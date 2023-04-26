@@ -1,0 +1,24 @@
+.navbar{
+    font-weight: 300;
+    box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.25);
+}
+.navbar-brand img{
+    width: 7rem;
+}
+
+.flag{
+    width: 0.5rem;
+}
+
+.navbar .nav span{
+    font-size: 0.7rem;
+}
+
+.header-end{
+    gap: 1rem;
+    font-size: 0.8rem;
+}
+
+.country{
+    font-weight: bold;
+}
