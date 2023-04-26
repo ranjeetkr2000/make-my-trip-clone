@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Navbar from "../Navbar";
+import FromTo from "./FromTo";
 
 class HeroSection extends Component {
     render() {
@@ -57,46 +58,7 @@ class HeroSection extends Component {
                     <div>Book International & Domestic Flights</div>
                 </div>
 
-                <div className="d-flex search_div">
-                    <div className="from">
-                        <span>From</span>
-                        <span>
-                            <h4>Delhi</h4>
-                            <small>DEL, Delhi Airport India</small>
-                        </span>
-                    </div>
-
-                    <div className="to">
-                        <span>To</span>
-                        <span>
-                            <h4>Bangaluru</h4>
-                            <small>BLR, Bengaluru Airport India</small>
-                        </span>
-                    </div>
-                    <div className="departure">
-                        <span>Departure</span>
-                        <span>
-                            <h4>26 Apr'23</h4>
-                            <small>Wednesday</small>
-                        </span>
-                    </div>
-                    <div className="return">
-                        <span>Return</span>
-                        <span>
-                            <h4>27 Apr'23</h4>
-                            <small>Thursday</small>
-                        </span>
-                    </div>
-
-                    <div className="travellers">
-                        <span>Travellers & Class</span>
-                        <span className="d-flex flex-column">
-                            <h4>1 Traveller</h4>
-                            <small>Economy/Premium Economy</small>
-                            <small>Group Bookings Available!</small>
-                        </span>
-                    </div>
-                </div>
+                <FromTo />
 
                 <div className="fare_search">
                     <div className="fare_types">

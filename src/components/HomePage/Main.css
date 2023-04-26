@@ -102,14 +102,6 @@
     border-radius: 0.5rem;
 }
 
-.search_div div{
-    display: flex;
-    flex-direction: column;
-    padding: 0.5rem 1rem;
-    padding-right: 3rem;
-    gap: 1rem;
-}
-
 .from, .to{
     flex: 2;
 }
@@ -120,8 +112,14 @@ h4{
     padding: 0;
 }
 
-.from, .to, .departure, .return {
+.from, .to, .departure, .return, .travellers{
     border-right: 1px solid lightgrey;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 1rem;
+    padding-right: 3rem;
+    gap: 1rem;
 }
 
 .trendings_div{
@@ -147,4 +145,24 @@ h4{
     background: linear-gradient(to right, #3fa2ff, #3f00f6);
     color: white;
     margin-bottom: -1.5rem;
+}
+
+/* search box */
+.search_box{
+    position: absolute;
+    background-color: white;
+    top: 2rem;
+    height: 20rem;
+    overflow-y: scroll;
+    box-shadow: 0 0 0.3rem rgba(0,0,0,0.5);
+    border-radius: 0.4rem;
+    z-index: 1;
+}
+
+.airport{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    gap: 1rem;
 }
