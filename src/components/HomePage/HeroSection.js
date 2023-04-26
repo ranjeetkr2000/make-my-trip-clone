@@ -16,6 +16,7 @@ class HeroSection extends Component {
                                 value="one-way"
                                 name="trip"
                                 className="form-check-input"
+                                defaultChecked
                             ></input>
                             <label
                                 className="form-check-label"
@@ -71,6 +72,7 @@ class HeroSection extends Component {
                                 value="regular"
                                 name="fare-type"
                                 className="form-check-input"
+                                defaultChecked
                             ></input>
                             <label
                                 className="form-check-label"

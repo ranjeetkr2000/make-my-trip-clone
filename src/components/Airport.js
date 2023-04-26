@@ -1,9 +1,11 @@
 import React, { Component } from "react";
 
+import {connect} from "react-redux";
+
 class Airport extends Component {
 
     handleClick = () => {
-        this.props.getAirport(this.props.data);
+        this.props.setAirport(this.props.data);
     }
 
     render() {
@@ -23,5 +25,7 @@ class Airport extends Component {
         );
     }
 }
+
+
 
 export default Airport;

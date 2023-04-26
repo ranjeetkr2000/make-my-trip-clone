@@ -1,5 +1,9 @@
 import React, { Component } from "react";
+
+import { connect } from "react-redux";
+
 import SearchBox from "../SearchBox";
+import { UPDATE_FROM_LOCATION, UPDATE_TO_LOCATION } from "../../redux/actionTypes";
 
 class FromTo extends Component {
 
@@ -9,22 +13,11 @@ class FromTo extends Component {
         this.state = {
             showFromSearch : false,
             showToSearch: false,
-            airport: {
-                from:{
-                    city: "Delhi",
-                    airportName: "Delhi Airport India",
-                    IATA: "DEL"
-                },
-                to: {
-                    city: "Bengaluru",
-                    airportName: "Bengaluru Airport India",
-                    IATA: "BLR"
-                }
-            },
         }
     }
 
-    handleFromClick = () => {
+    handleFromClick = (event) => {
+        event.stopPropagation();
         this.setState((prevState) => {
             return {
                 ...prevState,
@@ -44,38 +37,12 @@ class FromTo extends Component {
         })
     }
 
-    getAirport = (airportData) => {
-        const {city, airportName, IATA} = airportData;
+    setAirport = (data) => {
         if(this.state.showFromSearch){
-            this.setState((prevState) => {
-                return {
-                    ...prevState,
-                    airport: {
-                        ...prevState.airport,
-                        from: {
-                            city,
-                            airportName,
-                            IATA,
-                        }
-                    }
-                }
-            })
+            this.props.updateFrom(data);
         }
         if(this.state.showToSearch){
-            const {city, airportName, IATA} = airportData;
-            this.setState((prevState) => {
-                return {
-                    ...prevState,
-                    airport: {
-                        ...prevState.airport,
-                        to: {
-                            city,
-                            airportName,
-                            IATA,
-                        }
-                    }
-                }
-            })
+            this.props.updateTo(data);
         }
     }
 
@@ -85,31 +52,37 @@ class FromTo extends Component {
                 <div className="from" onClick={this.handleFromClick}>
                     <span>From</span>
                     <span>
-                        <h4>{this.state.airport.from.city}</h4>
-                        <small>{this.state.airport.from.IATA}, {this.state.airport.from.airportName}</small>
+                        <h4>{this.props.from.city}</h4>
+                        <small>{this.props.from.IATA}, {this.props.from.airportName}</small>
                     </span>
                     {
-                        this.state.showFromSearch && <SearchBox place={"From"} getAirport={this.getAirport}/>
+                        this.state.showFromSearch && <SearchBox place={"From"} setAirport={this.setAirport}/>
                     }
                 </div>
 
                 <div className="to" onClick={this.handleToClick}>
                     <span>To</span>
                     <span>
-                        <h4>{this.state.airport.to.city}</h4>
-                        <small>{this.state.airport.to.IATA}, {this.state.airport.to.airportName}</small>
+                        <h4>{this.props.to.city}</h4>
+                        <small>{this.props.to.IATA}, {this.props.to.airportName}</small>
                     </span>
                     {
-                        this.state.showToSearch && <SearchBox place={"To"} getAirport={this.getAirport}/>
+                        this.state.showToSearch && <SearchBox place={"To"} setAirport={this.setAirport}/>
                     }
                 </div>
                 <div className="departure">
                     <span>Departure</span>
-                    <input type="date" />
+                    <input 
+                        type="date"
+                        defaultValue="2023-04-27"
+                    />
                 </div>
                 <div className="return">
                     <span>Return</span>
-                    <input type="date" />
+                    <input 
+                        type="date"
+                        defaultValue="2023-04-28"
+                    />
                 </div>
 
                 <div className="travellers">
@@ -125,4 +98,28 @@ class FromTo extends Component {
     }
 }
 
-export default FromTo;
+function mapStateToProps(state){
+    return {
+        from: state.searchReducer.from,
+        to: state.searchReducer.to,
+    }
+}
+
+function mapDispatchToProps(dispatch){
+    return {
+        updateFrom : (data) => {
+            dispatch({
+                type: UPDATE_FROM_LOCATION,
+                payload : data,
+            })
+        },
+        updateTo : (data) => {
+            dispatch({
+                type: UPDATE_TO_LOCATION,
+                payload: data,
+            })
+        }
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(FromTo);

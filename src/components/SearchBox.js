@@ -8,11 +8,11 @@ class SearchBox extends Component {
     render() {
         return (
             <div className="search_box">
-                <input
+                {/* <input
                     type="text"
                     className="form-control search_input"
                     placeholder={this.props.place}
-                />
+                /> */}
                 <h6><small>POPULAR AIRPORTS</small></h6>
                 <div>
                     {
@@ -21,7 +21,7 @@ class SearchBox extends Component {
                                 <Airport
                                     data={currAirport}
                                     key={currAirport.id}
-                                    getAirport={this.props.getAirport}
+                                    setAirport={this.props.setAirport}
                                 />
                             )
                         })
