@@ -9,7 +9,18 @@ class FromTo extends Component {
         this.state = {
             showFromSearch : false,
             showToSearch: false,
-            airport: {},
+            airport: {
+                from:{
+                    city: "Delhi",
+                    airportName: "Delhi Airport India",
+                    IATA: "DEL"
+                },
+                to: {
+                    city: "Bengaluru",
+                    airportName: "Bengaluru Airport India",
+                    IATA: "BLR"
+                }
+            },
         }
     }
 
@@ -33,8 +44,39 @@ class FromTo extends Component {
         })
     }
 
-    getAirport = () => {
-        
+    getAirport = (airportData) => {
+        const {city, airportName, IATA} = airportData;
+        if(this.state.showFromSearch){
+            this.setState((prevState) => {
+                return {
+                    ...prevState,
+                    airport: {
+                        ...prevState.airport,
+                        from: {
+                            city,
+                            airportName,
+                            IATA,
+                        }
+                    }
+                }
+            })
+        }
+        if(this.state.showToSearch){
+            const {city, airportName, IATA} = airportData;
+            this.setState((prevState) => {
+                return {
+                    ...prevState,
+                    airport: {
+                        ...prevState.airport,
+                        to: {
+                            city,
+                            airportName,
+                            IATA,
+                        }
+                    }
+                }
+            })
+        }
     }
 
     render() {
@@ -43,8 +85,8 @@ class FromTo extends Component {
                 <div className="from" onClick={this.handleFromClick}>
                     <span>From</span>
                     <span>
-                        <h4>Delhi</h4>
-                        <small>DEL, Delhi Airport India</small>
+                        <h4>{this.state.airport.from.city}</h4>
+                        <small>{this.state.airport.from.IATA}, {this.state.airport.from.airportName}</small>
                     </span>
                     {
                         this.state.showFromSearch && <SearchBox place={"From"} getAirport={this.getAirport}/>
@@ -54,8 +96,8 @@ class FromTo extends Component {
                 <div className="to" onClick={this.handleToClick}>
                     <span>To</span>
                     <span>
-                        <h4>Bangaluru</h4>
-                        <small>BLR, Bengaluru Airport India</small>
+                        <h4>{this.state.airport.to.city}</h4>
+                        <small>{this.state.airport.to.IATA}, {this.state.airport.to.airportName}</small>
                     </span>
                     {
                         this.state.showToSearch && <SearchBox place={"To"} getAirport={this.getAirport}/>
@@ -63,17 +105,11 @@ class FromTo extends Component {
                 </div>
                 <div className="departure">
                     <span>Departure</span>
-                    <span>
-                        <h4>26 Apr'23</h4>
-                        <small>Wednesday</small>
-                    </span>
+                    <input type="date" />
                 </div>
                 <div className="return">
                     <span>Return</span>
-                    <span>
-                        <h4>27 Apr'23</h4>
-                        <small>Thursday</small>
-                    </span>
+                    <input type="date" />
                 </div>
 
                 <div className="travellers">

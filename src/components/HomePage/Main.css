@@ -122,6 +122,11 @@ h4{
     gap: 1rem;
 }
 
+.from:hover, .to:hover, .departure:hover, .return:hover, .travellers:hover{
+    cursor: pointer;
+    background-color: #e8f4ff;
+}
+
 .trendings_div{
     display: flex;
     align-items: center;
@@ -165,4 +170,9 @@ h4{
     justify-content: space-between;
     padding: 1rem;
     gap: 1rem;
+}
+
+.airport:hover{
+    cursor: pointer;
+    background-color: #f2f2f2;
 }
