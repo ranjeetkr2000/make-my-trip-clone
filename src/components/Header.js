@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
+
 import logo from "../images/mmtLogoDark.png";
 import indiaFlag from "../images/india.png";
 
@@ -10,7 +12,9 @@ class Header extends Component {
         return (
             <header className="navbar navbar-expand-lg bg-white d-flex justify-content-evenly">
                 <div className="navbar-brand">
-                    <img src={logo} alt="logo" />
+                    <Link to="/">
+                        <img src={logo} alt="logo" />
+                    </Link>
                 </div>
 
                 <Navbar />

@@ -108,7 +108,7 @@ a{
   align-items: center;
   background-color: white;
   padding: 1rem;
-  gap: 8rem;
+  gap: 5rem;
   border-radius: 0.5rem;
   box-shadow: 0 0 0.3rem rgba(0,0,0,0.4);
 }
@@ -117,6 +117,7 @@ a{
   display: flex;
   flex-direction: column;
   min-height: 92vh;
+  background-color: #e3eef4;
 }
 
 .search_hero{
@@ -147,6 +148,7 @@ a{
   background-color: #1c2939;
   padding: 0.2rem 1.5rem;
   border-radius: 0.5rem;
+  flex: 1,
 }
 
 .search_hero .fare_types .form-check label{
@@ -158,14 +160,37 @@ a{
   color: grey;
 }
 
+.filters_page{
+  display: flex;
+  margin-top: -8rem;
+  gap: 2rem;
+}
+
+.filters{
+  background-color: white;
+  box-shadow: 0 0 0.3rem rgba(0,0,0,0.4);
+  padding: 1rem;
+  padding-right: 8rem;
+}
+
 .search_result{
   align-self: center;
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  margin-top: -8rem;
+  
 }
 
 .search_result h4{
   color: white;
+}
+
+.view_prices{
+  border:none;
+  color: #0078ff;
+  background-color: #d8e9ff;
+  border: 1px solid #0078ff;
+  border-radius: 2rem;
+  padding: 0.3rem 1.4rem;
+  text-transform: uppercase;
 }

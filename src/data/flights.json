@@ -230,11 +230,11 @@
 },
 {
     "id": 24,
-    "name" : "IndiGo",
+    "name" : "Vistara",
     "from" : "Delhi",
     "to": "Bengaluru",
-    "depTime" : "22:50",
-    "arrTime" : "02:30",
+    "depTime" : "21:50",
+    "arrTime" : "01:30",
     "time" : "03h 40m",
     "fare" : "6900"
 }]

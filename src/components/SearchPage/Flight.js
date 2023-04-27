@@ -21,7 +21,12 @@ class Flight extends Component {
                     <div>{to}</div>
                 </div>
 
-                <div>₹ {fare}</div>
+                <div className="fw-bold">
+                    <span className="me-2">₹ {fare}</span>
+                    <button className="view_prices">
+                        Book Now
+                    </button>
+                </div>    
             </div>
         );
     }
