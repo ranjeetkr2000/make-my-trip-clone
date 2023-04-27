@@ -10,14 +10,14 @@ class Flight extends Component {
                 <div>{name}</div>
 
                 <div>
-                    <div>{depTime}</div>
+                    <div className="fw-bold">{depTime}</div>
                     <div>{from}</div>
                 </div>
 
                 <div>{time}</div>
 
                 <div>
-                    <div>{arrTime}</div>
+                    <div className="fw-bold">{arrTime}</div>
                     <div>{to}</div>
                 </div>
 
