@@ -3,12 +3,12 @@ import { UPDATE_FROM_LOCATION, UPDATE_TO_LOCATION } from "../actionTypes";
 const initialState = {
     from: {
         city: "Delhi",
-        airportName: "Delhi Airport India",
+        airportName: "Indira Gandhi International Airport",
         IATA: "DEL",
     },
     to: {
         city: "Bengaluru",
-        airportName: "Bengaluru Airport India",
+        airportName: "Bengaluru International Airport",
         IATA: "BLR",
     },
 };

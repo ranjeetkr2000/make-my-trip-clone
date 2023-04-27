@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Navbar from "../Navbar";
 import FromTo from "./FromTo";
+import { Link } from "react-router-dom";
 
 class HeroSection extends Component {
     render() {
@@ -173,9 +174,11 @@ class HeroSection extends Component {
                     </div>
                 </div>
 
+            <Link to="/search" className="align-self-center"> 
                 <button className="search_btn">
                     SEARCH
                 </button>
+            </Link>
             </div>
         );
     }

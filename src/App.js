@@ -9,6 +9,7 @@ import Features from "./components/Features";
 import Info from "./components/Info";
 import Details from "./components/HomePage/Details";
 import Header from "./components/Header";
+import SearchPage from "./components/SearchPage/SearchPage";
 
 class App extends Component {
     render() {
@@ -27,7 +28,10 @@ class App extends Component {
                     />
 
                     <Route path="search" element={
-                            <Header />
+                            <>
+                                <Header />
+                                <SearchPage />
+                            </>
                         } 
                     />
                 </Routes>

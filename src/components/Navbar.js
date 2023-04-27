@@ -1,14 +1,17 @@
 import React, { Component } from "react";
+import { NavLink } from "react-router-dom";
 
 class Navbar extends Component {
     render() {
         return (
             <nav className="nav">
                 <ul className="navbar-nav d-flex flex-row">
-                    <li className="nav-item d-flex align-items-center flex-column me-4">
-                        <i className="fa-solid fa-plane-up"></i>
-                        <span className="mt-1">Flights</span>
-                    </li>
+                    <NavLink to="/">
+                        <li className="nav-item d-flex align-items-center flex-column me-4">
+                            <i className="fa-solid fa-plane-up"></i>
+                            <span className="mt-1">Flights</span>
+                        </li>
+                    </NavLink>
                     <li className="nav-item d-flex align-items-center flex-column me-4">
                         <i className="fa-solid fa-hotel"></i>
                         <span className="mt-1">Hotels</span>

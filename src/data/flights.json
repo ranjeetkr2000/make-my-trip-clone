@@ -1,0 +1,240 @@
+[{
+    "id": 1,
+    "name" : "Air India",
+    "from" : "Delhi",
+    "to": "Mumbai",
+    "depTime" : "20:05",
+    "arrTime" : "23:15",
+    "time" : "03h 10m",
+    "fare" : "3500"
+},
+{
+    "id": 2,
+    "name" : "Go Air",
+    "from" : "Delhi",
+    "to": "Bengaluru",
+    "depTime" : "05:00",
+    "arrTime" : "08:30",
+    "time" : "03h 30m",
+    "fare" : "5600"
+},
+{
+    "id": 3,
+    "name" : "Vistara",
+    "from" : "Delhi",
+    "to": "Mumbai",
+    "depTime" : "15:30",
+    "arrTime" : "17:30",
+    "time" : "02h 00m",
+    "fare" : "3300"
+},
+{
+    "id": 4,
+    "name" : "SpiceJet",
+    "from" : "Mumbai",
+    "to": "Delhi",
+    "depTime" : "13:15",
+    "arrTime" : "16:30",
+    "time" : "03h 15m",
+    "fare" : "4000"
+},
+{
+    "id": 5,
+    "name" : "IndiGo",
+    "from" : "Mumbai",
+    "to": "Bengaluru",
+    "depTime" : "15:40",
+    "arrTime" : "18:30",
+    "time" : "02h 50m",
+    "fare" : "3700"
+},
+{
+    "id": 6,
+    "name" : "AirAsia",
+    "from" : "Mumbai",
+    "to": "Bengaluru",
+    "depTime" : "14:40",
+    "arrTime" : "16:30",
+    "time" : "01h 50m",
+    "fare" : "3800"
+},
+{
+    "id": 7,
+    "name" : "Air India",
+    "from" : "Mumbai",
+    "to": "Delhi",
+    "depTime" : "12:40",
+    "arrTime" : "15:30",
+    "time" : "02h 50m",
+    "fare" : "3900"
+},
+{
+    "id": 8,
+    "name" : "Vistara",
+    "from" : "Bengaluru",
+    "to": "Delhi",
+    "depTime" : "10:20",
+    "arrTime" : "13:30",
+    "time" : "03h 10m",
+    "fare" : "9000"
+},
+{
+    "id": 9,
+    "name" : "Go Air",
+    "from" : "Bengaluru",
+    "to": "Delhi",
+    "depTime" : "16:40",
+    "arrTime" : "20:30",
+    "time" : "03h 50m",
+    "fare" : "7500"
+},
+{
+    "id": 10,
+    "name" : "AirAsia",
+    "from" : "Bengaluru",
+    "to": "Mumbai",
+    "depTime" : "06:40",
+    "arrTime" : "08:30",
+    "time" : "01h 50m",
+    "fare" : "7700"
+},
+{
+    "id": 11,
+    "name" : "Air India",
+    "from" : "Bengaluru",
+    "to": "Mumbai",
+    "depTime" : "11:50",
+    "arrTime" : "14:00",
+    "time" : "02h 10m",
+    "fare" : "6700"
+},
+{
+    "id": 12,
+    "name" : "IndiGo",
+    "from" : "Delhi",
+    "to": "Bengaluru",
+    "depTime" : "22:50",
+    "arrTime" : "02:30",
+    "time" : "03h 40m",
+    "fare" : "6900"
+},
+{
+    "id": 13,
+    "name" : "Air Asia",
+    "from" : "Delhi",
+    "to": "Mumbai",
+    "depTime" : "20:05",
+    "arrTime" : "23:15",
+    "time" : "03h 10m",
+    "fare" : "3500"
+},
+{
+    "id": 14,
+    "name" : "Air India",
+    "from" : "Delhi",
+    "to": "Bengaluru",
+    "depTime" : "05:00",
+    "arrTime" : "08:30",
+    "time" : "03h 30m",
+    "fare" : "5600"
+},
+{
+    "id": 15,
+    "name" : "Go Air",
+    "from" : "Delhi",
+    "to": "Mumbai",
+    "depTime" : "15:30",
+    "arrTime" : "17:30",
+    "time" : "02h 00m",
+    "fare" : "3300"
+},
+{
+    "id": 16,
+    "name" : "SpiceJet",
+    "from" : "Mumbai",
+    "to": "Delhi",
+    "depTime" : "13:15",
+    "arrTime" : "16:30",
+    "time" : "03h 15m",
+    "fare" : "4000"
+},
+{
+    "id": 17,
+    "name" : "SpiceJet",
+    "from" : "Mumbai",
+    "to": "Bengaluru",
+    "depTime" : "15:40",
+    "arrTime" : "18:30",
+    "time" : "02h 50m",
+    "fare" : "3700"
+},
+{
+    "id": 18,
+    "name" : "Air India",
+    "from" : "Mumbai",
+    "to": "Bengaluru",
+    "depTime" : "14:40",
+    "arrTime" : "16:30",
+    "time" : "01h 50m",
+    "fare" : "3800"
+},
+{
+    "id": 19,
+    "name" : "Air Asia",
+    "from" : "Mumbai",
+    "to": "Delhi",
+    "depTime" : "12:40",
+    "arrTime" : "15:30",
+    "time" : "02h 50m",
+    "fare" : "3900"
+},
+{
+    "id": 20,
+    "name" : "Go Air",
+    "from" : "Bengaluru",
+    "to": "Delhi",
+    "depTime" : "10:20",
+    "arrTime" : "13:30",
+    "time" : "03h 10m",
+    "fare" : "9000"
+},
+{
+    "id": 21,
+    "name" : "AirAsia",
+    "from" : "Bengaluru",
+    "to": "Delhi",
+    "depTime" : "16:40",
+    "arrTime" : "20:30",
+    "time" : "03h 50m",
+    "fare" : "7500"
+},
+{
+    "id": 22,
+    "name" : "SpiceJet",
+    "from" : "Bengaluru",
+    "to": "Mumbai",
+    "depTime" : "06:40",
+    "arrTime" : "08:30",
+    "time" : "01h 50m",
+    "fare" : "7700"
+},
+{
+    "id": 23,
+    "name" : "Vistara",
+    "from" : "Bengaluru",
+    "to": "Mumbai",
+    "depTime" : "11:50",
+    "arrTime" : "14:00",
+    "time" : "02h 10m",
+    "fare" : "6700"
+},
+{
+    "id": 24,
+    "name" : "IndiGo",
+    "from" : "Delhi",
+    "to": "Bengaluru",
+    "depTime" : "22:50",
+    "arrTime" : "02:30",
+    "time" : "03h 40m",
+    "fare" : "6900"
+}]

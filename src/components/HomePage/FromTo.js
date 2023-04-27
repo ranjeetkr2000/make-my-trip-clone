@@ -81,7 +81,6 @@ class FromTo extends Component {
                     <span>Return</span>
                     <input 
                         type="date"
-                        defaultValue="2023-04-28"
                     />
                 </div>
 
@@ -90,7 +89,7 @@ class FromTo extends Component {
                     <span className="d-flex flex-column">
                         <h4>1 Traveller</h4>
                         <small>Economy/Premium Economy</small>
-                        <small>Group Bookings Available!</small>
+                        <small className="text-warning">Group Bookings Available!</small>
                     </span>
                 </div>
             </div>
