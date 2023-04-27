@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import {connect} from "react-redux";
 
 import logo from "../images/mmtLogoDark.png";
 import indiaFlag from "../images/india.png";
@@ -21,8 +22,15 @@ class Header extends Component {
 
                 <div className="header-end d-flex align-items-center">
                     <div className="d-flex flex-column fw-bold">
-                        <span>Login or</span>
-                        <span>Create Account</span>
+                        {
+                            this.props.user.name? 
+                            <span>Hi, {this.props.user.name}</span>
+                            :
+                            <div className="header_login_btn">
+                                <span>Login or</span>
+                                <span>Create Account</span>
+                            </div>
+                        }
                     </div>
                     <div className="dropdown d-flex flex-column">
                         <span>Country</span>
@@ -69,4 +77,10 @@ class Header extends Component {
     }
 }
 
-export default Header;
+function mapStateToProps(state){
+    return {
+        user : state.userReducer.userData,
+    }
+}
+
+export default connect(mapStateToProps)(Header);

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import { connect } from "react-redux";
 
 import logo from "../../images/mmtLogoWhite.png";
 import discountIcon from "../../images/discount.png";
@@ -45,9 +46,16 @@ class Main extends Component {
                             <span className="fw-bold">My Trips</span>
                             <small>Manage Your Bookings</small>
                         </div>
-                        <button className="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#loginModal">
-                            <small>Login or Create Account</small>
-                        </button>
+                        <>
+                            {
+                                this.props.user.name?
+                                <span>HI, {this.props.user.name}</span>
+                                :
+                                <button className="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#loginModal">
+                                    <small>Login or Create Account</small>
+                                </button>
+                            }
+                        </>
                         <LoginPage />
                         <div className="d-flex align-items-center btn btn-secondary text-white">
                             <span>
@@ -67,4 +75,10 @@ class Main extends Component {
     }
 }
 
-export default Main;
+function mapStateToProps(state){
+    return {
+        user : state.userReducer.userData,
+    }
+}
+
+export default connect(mapStateToProps)(Main);
