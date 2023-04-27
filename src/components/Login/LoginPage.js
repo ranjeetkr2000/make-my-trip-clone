@@ -20,7 +20,7 @@ class LoginPage extends Component {
 
     handleSubmit = (event) => {
         event.preventDefault();
-        if(this.validate){
+        if(this.validate()){
             this.props.updateUser({
                 name: "Traveller",
                 mobile: this.state.mobileNumber,
