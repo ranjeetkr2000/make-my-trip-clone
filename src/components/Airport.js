@@ -10,15 +10,15 @@ class Airport extends Component {
         return (
             <div className="airport" onClick={this.handleClick}>
                 <div>
-                    <div className="fw-bold">
+                    <div className="fw-bold text-dark">
                         {this.props.data.city}, {this.props.data.country}
                     </div>
-                    <div>{this.props.data.airportName}</div>
+                    <small>{this.props.data.airportName}</small>
                 </div>
 
-                <div>
+                <small>
                     {this.props.data.IATA}
-                </div>
+                </small>
             </div>
         );
     }

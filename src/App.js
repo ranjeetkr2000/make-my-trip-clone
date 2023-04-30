@@ -1,13 +1,9 @@
 import React, { Component } from "react";
 import { Routes, Route } from "react-router-dom";
 
-import Main from "./components/HomePage/Main";
-
 import "./App.css";
-import Footer from "./components/Footer";
-import Features from "./components/Features";
-import Info from "./components/Info";
-import Details from "./components/HomePage/Details";
+
+import HomePage from "./components/HomePage/HomePage";
 import Header from "./components/Header";
 import SearchPage from "./components/SearchPage/SearchPage";
 
@@ -16,15 +12,7 @@ class App extends Component {
         return (
             <div className="App">
                 <Routes>
-                    <Route path="/" element={
-                        <>
-                            <Main />
-                            <Details />
-                            <Info />
-                            <Features />
-                            <Footer />
-                        </>
-                        } 
+                    <Route path="/" element={<HomePage />} 
                     />
 
                     <Route path="search" element={

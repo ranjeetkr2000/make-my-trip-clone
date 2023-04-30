@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 
 import SearchBox from "../SearchBox";
 import { UPDATE_FROM_LOCATION, UPDATE_TO_LOCATION } from "../../redux/actionTypes";
+import ErrorMsg from "./ErrorMsg";
 
 class FromTo extends Component {
 
@@ -68,6 +69,9 @@ class FromTo extends Component {
                     </span>
                     {
                         this.state.showToSearch && <SearchBox place={"To"} setAirport={this.setAirport}/>
+                    }
+                    {
+                        this.props.isSameCity && <ErrorMsg />
                     }
                 </div>
                 <div className="departure">

@@ -1,0 +1,62 @@
+[
+    {
+        "id" : 1,
+        "title": "Stays in & Around Delhi for a Weekend Getaway",
+        "position" : "8",
+        "image" : "https://hblimg.mmtcdn.com/content/hubble/img/delhi_hotels_tiow/mmt/activities/m_Le%20ROI%20Floating%20Huts_Eco%20Rooms_Tehri_Uttarakhand_l_550_821.jpg?im=Resize=(400,462)"
+    },
+    {
+        "id" : 2,
+        "title": "Stays in & Around Mumbai for a Weekend Getaway",
+        "position" : "8",
+        "image" : "https://hblimg.mmtcdn.com/content/hubble/img/seo_img/mmt/activities/m_Radisson_blu_image_seo_l_550_821.jpg?im=Resize=(400,462)"
+    },
+    {   
+        "id" : 3,
+        "title": "Stays in & Around Banglore for a Weekend Getaway",
+        "position" : "8",
+        "image" : "https://hblimg.mmtcdn.com/content/hubble/img/bangalore_hotel_tiow/mmt/activities/m_Waterwoods%20Lodges%20&%20Resorts_Kabini_l_550_821.jpg?im=Resize=(400,462)"
+    },
+    {
+        "id" : 4,
+        "title": "Beach Destinations",
+        "position" : "11",
+        "image" : "https://hblimg.mmtcdn.com/content/hubble/img/collections/m_beach44_p_540_417.jpg?im=Resize=(400,462)"
+    },
+    {   
+        "id" : 5,
+        "title": "Weekend Getaways",
+        "position" : "11",
+        "image" : "https://hblimg.mmtcdn.com/content/hubble/img/collections/m_weekend44_p_540_417.jpg?im=Resize=(400,462)"
+    },
+    {   
+        "id" : 6,
+        "title": "Hill Stations",
+        "position" : "11",
+        "image" : "https://hblimg.mmtcdn.com/content/hubble/img/collections/m_hill_stations11_p_540_417.jpg?im=Resize=(400,462)"
+    },
+    {
+        "id" : 7,
+        "title": "Adventure Destinations",
+        "position" : "11",
+        "image" : "https://hblimg.mmtcdn.com/content/hubble/img/Australia/mmt/destination/m_Australia_destination_6_l_361_641.jpg?im=Resize=(400,462)"
+    },
+    {
+        "id" : 8,
+        "title": "Heritage Destinations",
+        "position" : "11",
+        "image" : "https://hblimg.mmtcdn.com//content/hubble/img/amritsar/mmt/destination/m_Amritsar_activity_heritage_l_684_1026.jpg?im=Resize=(400,462)"
+    },
+    {
+        "id" : 9,
+        "title": "Pilgrimage Destinations",
+        "position" : "11",
+        "image" : "https://hblimg.mmtcdn.com/content/hubble/img/collections/m_pilgrimage44_p_540_417.jpg?im=Resize=(400,462)"
+    },
+    {
+        "id" : 10,
+        "title": "Relaxation Destinations",
+        "position" : "11",
+        "image" : "https://hblimg.mmtcdn.com//content/hubble/img/alleppey/mmt/destination/m_destination-alleppey-landscape_l_400_640.jpg?im=Resize=(400,462)"
+    }
+]

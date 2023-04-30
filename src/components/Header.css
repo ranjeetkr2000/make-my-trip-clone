@@ -22,3 +22,14 @@
 .country{
     font-weight: bold;
 }
+
+.header_login_btn{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.user_details{
+    align-self: center;
+    margin-right: 0.3rem;
+}

@@ -7,7 +7,6 @@ import discountIcon from "../../images/discount.png";
 import briefCase from "../../images/briefcase.png";
 import tripsImg from "../../images/trips.png";
 
-import "./Main.css";
 import MainHeader from "./MainHeader";
 import indiaFlag from "../../images/india.png";
 import HeroSection from "./HeroSection";
@@ -18,7 +17,7 @@ class Main extends Component {
         return (
             <div className="main">
                 <MainHeader />
-                <header className="hero_header p-2">
+                <header className="hero_header">
                     <div className="navbar-brand">
                         <Link to="/">
                             <img src={logo} alt="logo" />
@@ -49,7 +48,7 @@ class Main extends Component {
                         <>
                             {
                                 this.props.user.name?
-                                <span>HI, {this.props.user.name}</span>
+                                <span className="user_details">Hi, {this.props.user.name}</span>
                                 :
                                 <button className="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#loginModal">
                                     <small>Login or Create Account</small>

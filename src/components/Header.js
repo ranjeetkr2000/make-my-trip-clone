@@ -24,7 +24,7 @@ class Header extends Component {
                     <div className="d-flex flex-column fw-bold">
                         {
                             this.props.user.name? 
-                            <span>Hi, {this.props.user.name}</span>
+                            <span className="user_details">Hi, {this.props.user.name}</span>
                             :
                             <div className="header_login_btn">
                                 <span>Login or</span>
