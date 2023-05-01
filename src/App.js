@@ -6,6 +6,7 @@ import "./App.css";
 import HomePage from "./components/HomePage/HomePage";
 import Header from "./components/Header";
 import SearchPage from "./components/SearchPage/SearchPage";
+import BookingPage from "./components/BookingPage/BookingPage";
 
 class App extends Component {
     render() {
@@ -22,6 +23,8 @@ class App extends Component {
                             </>
                         } 
                     />
+
+                    <Route path="book" element={<BookingPage />} />
                 </Routes>
             </div>
         );

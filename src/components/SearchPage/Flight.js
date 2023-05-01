@@ -2,19 +2,22 @@ import React, { Component } from "react";
 
 class Flight extends Component {
     render() {
-        const { name, arrTime, depTime, from, to, time, fare } =
+        const { name, arrTime, depTime, from, to, duration, fare, logo } =
             this.props.flightData;
 
         return (
             <div className="flight_info">
-                <div>{name}</div>
+                <div className="flight_name">
+                    <img src={logo} alt={"logo"} className="me-1"></img>
+                    {name}
+                </div>
 
                 <div>
                     <div className="fw-bold">{depTime}</div>
                     <div>{from}</div>
                 </div>
 
-                <div>{time}</div>
+                <div>{duration}</div>
 
                 <div>
                     <div className="fw-bold">{arrTime}</div>
@@ -22,7 +25,7 @@ class Flight extends Component {
                 </div>
 
                 <div className="fw-bold">
-                    <span className="me-2">₹ {fare}</span>
+                    <span className="me-2">₹ {fare.toLocaleString("en-IN")}</span>
                     <button className="view_prices">
                         Book Now
                     </button>
