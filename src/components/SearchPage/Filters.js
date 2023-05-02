@@ -75,6 +75,10 @@ class Filters extends Component {
                         <label htmlFor="Vistara">Vistara</label>
                     </div>
                 </div>
+
+                <div className="price_slider">
+                    <input type="range" min="6000" max="15000" defaultValue={10500} className="slider" id="price-range" />
+                </div>
             </div>
         );
     }

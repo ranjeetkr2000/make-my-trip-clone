@@ -50,12 +50,12 @@ class Main extends Component {
                                 this.props.user.name?
                                 <span className="user_details">Hi, {this.props.user.name}</span>
                                 :
-                                <button className="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#loginModal">
+                                <button className="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#loginModal1">
                                     <small>Login or Create Account</small>
                                 </button>
                             }
                         </>
-                        <LoginPage />
+                        <LoginPage id="loginModal1"/>
                         <div className="d-flex align-items-center btn btn-secondary text-white">
                             <span>
                                 <img

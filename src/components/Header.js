@@ -27,13 +27,13 @@ class Header extends Component {
                             this.props.user.name? 
                             <span className="user_details">Hi, {this.props.user.name}</span>
                             :
-                            <div className="header_login_btn" data-bs-toggle="modal" data-bs-target="#loginModal">
+                            <div className="header_login_btn" data-bs-toggle="modal" data-bs-target="#loginModal2">
                                 <span>Login or</span>
                                 <span>Create Account</span>
                             </div>
                         }
                     </div>
-                    <LoginPage />
+                    <LoginPage id="loginModal2"/>
                     <div className="dropdown d-flex flex-column">
                         <span>Country</span>
                         <div

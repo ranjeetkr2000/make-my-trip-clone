@@ -8,3 +8,5 @@ export const INIT_FLIGHTS = "INTI_FLIGHTS";
 
 export const ADD_FILTER = "ADD_FILTER";
 export const REMOVE_FILTER = "REMOVE_FILTER";
+
+export const BOOK_FLIGHT = "BOOK_FLIGHT";

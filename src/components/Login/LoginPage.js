@@ -62,7 +62,6 @@ class LoginPage extends Component {
                     formValid: true,
                 };
             });
-            console.log("yes");
             return true;
         }
     }
@@ -71,12 +70,12 @@ class LoginPage extends Component {
         return (
             <div
                 className="modal fade"
-                id="loginModal"
+                id={this.props.id}
                 tabIndex="-1"
                 aria-labelledby="exampleModalLabel"
                 aria-hidden="true"
             >
-                <div className="modal-dialog modal-dialog-centered ">
+                <div className="modal-dialog modal-dialog-centered">
                     <div className="modal-content">
                         <div className="modal-body">
                             <div className="login_div">

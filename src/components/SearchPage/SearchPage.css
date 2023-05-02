@@ -11,7 +11,7 @@
 .search_page {
     display: flex;
     flex-direction: column;
-    min-height: 92vh;
+    flex: 1;
     background-color: #e3eef4;
 }
 
@@ -66,6 +66,11 @@
     box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.4);
     padding: 1rem;
     padding-right: 8rem;
+}
+
+.filter{
+    display: flex;
+    flex-direction: column;
 }
 
 .search_result {
@@ -123,4 +128,15 @@
     max-width: 60%;
     text-align: center;
     font-size: 1.2rem;
+}
+
+/* price slider */
+.price_slider{
+    color: blue;
+    align-self: stretch;
+}
+
+.slider{
+    color: blue;
+    width: 100%;
 }

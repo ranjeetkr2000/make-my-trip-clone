@@ -1,4 +1,148 @@
+.booking_page{
+    display: flex;
+    flex-direction: column;
+}
+
 .cancel_fees{
     background: linear-gradient(to right, #00cc90, #009996);
     color: white;
+    border-radius: 0.2rem;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    padding: 0 0.3rem 0 0.3rem;
+    align-self: flex-end;
+}
+
+.refund_section{
+    background-color: #f5f5ff;
+    padding: 1rem;
+}
+.booking_details_main{
+    display: flex;
+    width: 75%;
+    margin-top: -10rem;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 1.5rem;
+}
+.booking_details_container{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    box-shadow: 0 3px 30px 0 rgba(0,0,0,.1);
+    background-color: #fff;
+    border-radius: 2px;
+    padding: 1.2rem;
+    gap: 1rem;
+}
+
+.booking_header{
+    display: flex;
+    min-height: 30vh;
+    background: linear-gradient(to bottom, #020f1d, #15397b);
+    flex-direction: column;
+    padding-top: 2rem;
+}
+
+.booking_heading{
+    width:75%;
+    align-self: center;
+    font-weight: bold;
+}
+
+.booking_city{
+    display: flex;
+    justify-content: space-between;
+}
+
+.booking_flight_details{
+    padding: 1rem;
+    box-shadow: 0 0 0 0.2rem rgba(0,0,0,0.1);
+    border-radius: 0.1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.booking_page .flight_name > img{
+    width: 2rem;
+    height: 2rem;
+}
+
+.time_details{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.book_flight_info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 0.5rem;
+}
+
+.book_flight_info_left{
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+}
+
+.book_flight_info_right{
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+}
+
+.baggage_details{
+    list-style-type: none;
+    display: flex;
+    font-size: 0.9rem;
+    gap: 1.5rem;
+    
+}
+
+.baggage_details li{
+    display: flex;
+    flex-direction: column;
+    max-width: 5rem;
+}
+
+.fare_summary{
+    background-color: white;
+    border-radius: 0.1rem;
+    align-self: flex-start;
+    box-shadow: 0 0 0.2rem rgba(0,0,0,0.1);
+    padding: 1rem;
+    width: 25%;
+    font-size: 0.9rem;
+}
+
+.fare_row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.fare_header{
+    font-weight: bold;
+}
+
+.footer_hr{
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+
+.iata_name{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+/* Refund Section */
+.refund_header{
+    display: flex;
+    justify-content: space-between;
 }

@@ -1,9 +1,10 @@
-import { INIT_FLIGHTS, ADD_FILTER, REMOVE_FILTER } from "../actionTypes";
+import { INIT_FLIGHTS, ADD_FILTER, REMOVE_FILTER, BOOK_FLIGHT } from "../actionTypes";
 
 const initialState = {
     allFlights: [],
     filters: [],
     priceFilter: Number.MAX_SAFE_INTEGER,
+    bookFlight: {}
 }
 
 export default function flightReducer(state = initialState, action){
@@ -36,6 +37,13 @@ export default function flightReducer(state = initialState, action){
             return {
                 ...state,
                 filters: filteredData,
+            }
+        }
+
+        case BOOK_FLIGHT: {
+            return {
+                ...state,
+                bookFlight: action.payload
             }
         }
 

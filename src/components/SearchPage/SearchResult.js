@@ -56,11 +56,7 @@ class SearchResult extends Component {
         );
     };
 
-    componentDidMount() {
-        this.fetchFlights("https://flights-api-ook1.onrender.com/flights");
-    }
-
-    render() {
+    filterFlights = () => {
         let flightsData = this.props.allFlights.filter((currFlight) => {
             return (
                 currFlight.from === this.props.fromCity &&
@@ -68,13 +64,22 @@ class SearchResult extends Component {
             );
         });
 
-        let filteredFlightsData = flightsData.filter((currFlight) => {
+        return flightsData.filter((currFlight) => {
             if (this.props.filters.length === 0) {
                 return true;
             } else {
                 return this.props.filters.includes(currFlight.name);
             }
         });
+    }
+
+    componentDidMount() {
+        this.fetchFlights("https://flights-api-ook1.onrender.com/flights");
+    }
+
+    render() {
+        
+        const filteredFlightsData = this.filterFlights();
 
         return (
             <>
