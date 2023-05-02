@@ -7,6 +7,7 @@ import indiaFlag from "../images/india.png";
 
 import "./Header.css";
 import Navbar from "./Navbar";
+import LoginPage from "./Login/LoginPage";
 
 class Header extends Component {
     render() {
@@ -26,12 +27,13 @@ class Header extends Component {
                             this.props.user.name? 
                             <span className="user_details">Hi, {this.props.user.name}</span>
                             :
-                            <div className="header_login_btn">
+                            <div className="header_login_btn" data-bs-toggle="modal" data-bs-target="#loginModal">
                                 <span>Login or</span>
                                 <span>Create Account</span>
                             </div>
                         }
                     </div>
+                    <LoginPage />
                     <div className="dropdown d-flex flex-column">
                         <span>Country</span>
                         <div

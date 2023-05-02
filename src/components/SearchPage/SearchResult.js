@@ -7,6 +7,7 @@ import Loader from "../Loader/Loader";
 
 import { INIT_FLIGHTS } from "../../redux/actionTypes";
 import Filters from "./Filters";
+import FetchError from "./FetchError";
 
 class SearchResult extends Component {
     constructor(props) {
@@ -78,7 +79,7 @@ class SearchResult extends Component {
         return (
             <>
                 {this.state.status === this.API_STATES.LOADING && (
-                    <div className="d-flex align-self-center flex-column align-items-center">
+                    <div className="loader d-flex align-self-center flex-column align-items-center">
                         <Loader />
                         <h4 className="text-dark">
                             Hold on, we are fetching flights for you
@@ -87,9 +88,7 @@ class SearchResult extends Component {
                 )}
 
                 {this.state.status === this.API_STATES.ERROR && (
-                    <h4 className="text-white">
-                        Sorry, We are unable to fetch flights right now
-                    </h4>
+                    <FetchError />
                 )}
 
                 {this.state.status === this.API_STATES.LOADED &&

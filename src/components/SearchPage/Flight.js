@@ -26,7 +26,7 @@ class Flight extends Component {
 
                 <div className="fw-bold">
                     <span className="me-2">₹ {fare.toLocaleString("en-IN")}</span>
-                    <button className="view_prices">
+                    <button className="book_now">
                         Book Now
                     </button>
                 </div>    
