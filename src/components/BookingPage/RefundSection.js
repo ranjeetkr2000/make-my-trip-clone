@@ -34,10 +34,10 @@ class RefundSection extends Component {
                                 <div className="cancel_info_right">
                                     <div className="cancel_price_info">
                                         <span>
-                                            ₹ {(this.props.flightData.fare/3).toLocaleString("en-IN")}
+                                            ₹ {(this.props.flightData.fare/3)?.toLocaleString("en-IN")}
                                         </span>
                                         <span>
-                                            ₹ {this.props.flightData.fare.toLocaleString("en-IN")}
+                                            ₹ {this.props.flightData.fare?.toLocaleString("en-IN")}
                                         </span>
                                     </div>
                                     <div className="cancel_grad_line_main">
