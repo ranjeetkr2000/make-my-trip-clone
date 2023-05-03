@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 import "./BookingPage.css";
 import RefundSection from "./RefundSection";
 import Header from "../Header";
+import TravellerDetails from "./TravellerDetails";
 
 class BookingPage extends Component {
     render() {
@@ -38,7 +39,7 @@ class BookingPage extends Component {
                                         </div>
                                     </div>
                                     <div className="d-flex">
-                                        <small className="me-1">Non stop</small>
+                                        <small className="me-1">Non stop . </small>
                                         <small>{duration}</small>
                                     </div>
 
@@ -124,13 +125,12 @@ class BookingPage extends Component {
                                     </div>
                                 </div>
                             </div>
-                            <div>
-                                <RefundSection
-                                    from={this.props.from}
-                                    to={this.props.to}
-                                    flightData={this.props.bookedFlight}
-                                />
-                            </div>
+                            <RefundSection
+                                from={this.props.from}
+                                to={this.props.to}
+                                flightData={this.props.bookedFlight}
+                            />
+                            <TravellerDetails />
                         </div>
 
                         <div className="fare_summary">
@@ -138,7 +138,7 @@ class BookingPage extends Component {
                             <div className="fares_types">
                                 <div className="fare_row">                              
                                     <span className="fare_header">
-                                        <i class="fa-solid fa-circle-plus me-2"></i>
+                                        <i className="fa-solid fa-circle-plus me-2"></i>
                                         Base Fare
                                     </span>                                
                                     <span className="">
@@ -150,7 +150,7 @@ class BookingPage extends Component {
                             <div className="fareTypeWrap">
                                 <div className="fare_row">
                                     <span className="fare_header">
-                                        <i class="fa-solid fa-circle-plus me-2"></i>
+                                        <i className="fa-solid fa-circle-plus me-2"></i>
                                         Taxes and Surcharges
                                     </span>
                                     

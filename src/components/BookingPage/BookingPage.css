@@ -146,3 +146,53 @@
     display: flex;
     justify-content: space-between;
 }
+
+.cancel_info{
+    display: flex;
+    gap: 1rem;
+}
+
+.cancel_info_left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.cancel_info_right{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    text-align: center;
+}
+
+.cancel_price_info{
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+}
+
+.cancel_time_info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cancel_grad_line_main{
+    position: relative;
+}
+
+.cancel_grad_line{
+    height: 0.4rem;
+    background: linear-gradient(to right, #00a442, #6cc230, #c5aa00, #ea8801, #ff394e);
+    border-radius: 1rem;
+}
+
+.center_dash{
+    height: 1.5rem;
+    position: absolute;
+    left: 50%;
+    top:-50%;
+    border-right: 1px dashed grey;
+}
+
+/* Traveller Details */

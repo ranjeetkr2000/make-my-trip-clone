@@ -22,39 +22,40 @@ class RefundSection extends Component {
                                 </div>
                                 {this.props.from.IATA}-{this.props.to.IATA}
                             </span>
-                            <div>
-                                <div>
-                                    <p className="">
+                            <div className="cancel_info">
+                                <div className="cancel_info_left">
+                                    <span className="cancel_tag">
                                         Cancellation Penalty :
-                                    </p>
-                                    <p>Cancel Between (IST) :</p>
+                                    </span>
+                                    <span className="cancel_tag">
+                                        Cancel Between (IST) :
+                                    </span>
                                 </div>
-                                <div>
-                                    <div>
+                                <div className="cancel_info_right">
+                                    <div className="cancel_price_info">
                                         <span>
-                                            ₹ 3,800
+                                            ₹ {(this.props.flightData.fare/3).toLocaleString("en-IN")}
                                         </span>
                                         <span>
-                                            ₹ 19,007
+                                            ₹ {this.props.flightData.fare.toLocaleString("en-IN")}
                                         </span>
                                     </div>
-                                    <p ></p>
-                                    <div>
-                                        <div>
-                                            <p>Now</p>
-                                        </div>
-                                        <div>
-                                            <p>2 May</p>{" "}
-                                            <p>
-                                                17:00
-                                            </p>
-                                        </div>
-                                        <div>
-                                            <p>2 May</p>{" "}
-                                            <p>
-                                                19:00
-                                            </p>
-                                        </div>
+                                    <div className="cancel_grad_line_main">
+                                        <p className="cancel_grad_line"></p>
+                                        <div className="center_dash"></div>
+                                    </div>
+                                    <div className="cancel_time_info">
+                                        <small className="fw-bold">
+                                            Now
+                                        </small>
+                                        <small className="fw-bold">
+                                                {this.props.flightData.depTime}
+                                            
+                                        </small>
+                                        <small className="fw-bold">
+                                                {this.props.flightData.arrTime}
+                                            
+                                        </small>
                                     </div>
                                 </div>
                             </div>
